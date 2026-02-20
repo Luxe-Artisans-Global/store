@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luxe Artisans Global | Premium Art Export</title>
+    <title>Luxe Artisans Global | Premium Art & Craft Export</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
         body { font-family: 'Inter', sans-serif; }
+        .fade { animation: fadeAnim 1.5s; }
+        @keyframes fadeAnim {
+            from { opacity: 0.4; } 
+            to { opacity: 1; }
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900">
@@ -20,83 +25,121 @@
                 <span class="text-[9px] uppercase tracking-widest text-slate-400 mt-1 font-semibold">Global Trading & Export</span>
             </div>
         </div>
-        <div class="text-xs font-bold uppercase tracking-widest text-slate-500">
-            <span class="mr-4 text-emerald-600">USD / CNH Supported</span>
-            <a href="#" class="inline-flex items-center space-x-1"><span>Cart</span><span class="bg-slate-100 px-1.5 py-0.5 rounded-full text-[10px]">0</span></a>
+        <div class="hidden md:flex text-xs font-bold uppercase tracking-widest text-slate-500">
+            <span class="mr-6 text-emerald-600">Settlement: USD / CNH</span>
+            <span class="flex items-center space-x-1"><span>Cart</span><span class="bg-slate-100 px-1.5 py-0.5 rounded-full text-[10px]">1</span></span>
         </div>
     </nav>
 
     <header class="py-16 px-8 text-center bg-white border-b">
-        <h1 class="text-4xl md:text-6xl font-bold tracking-tighter mb-6">Artisanal Craft Export</h1>
-        <p class="text-slate-500 max-w-2xl mx-auto leading-relaxed italic">Premium B2B supplier for handcrafted decor. We support multi-currency settlement including <span class="text-slate-900 font-bold">USD</span> and <span class="text-slate-900 font-bold">CNH</span>.</p>
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tighter mb-4 text-slate-900">Premium Artisanal Collection</h1>
+        <p class="text-slate-500 max-w-2xl mx-auto leading-relaxed italic text-sm md:text-base">Direct factory export specializing in handcrafted ceramics and organic weaving. Secure cross-border payments in <span class="text-slate-900 font-bold underline decoration-emerald-500">USD</span> and <span class="text-slate-900 font-bold underline decoration-emerald-500">CNH</span>.</p>
     </header>
 
-    <section class="max-w-6xl mx-auto py-20 px-8 grid grid-cols-1 md:grid-cols-2 gap-12">
+    <section class="max-w-6xl mx-auto py-16 px-8 grid grid-cols-1 md:grid-cols-2 gap-12">
         
-        <div class="bg-white p-6 border border-slate-200 rounded-lg shadow-sm">
-            <div class="aspect-square bg-slate-100 rounded mb-6 overflow-hidden flex items-center justify-center">
-                <img src="product1.jpg" alt="Artisan Product" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" class="w-full h-full object-cover">
-                <div class="hidden text-slate-300 italic text-sm text-center p-4">Please upload product1.jpg to GitHub</div>
-            </div>
-            <h3 class="text-xl font-bold mb-4">Minimalist Ceramic Vase</h3>
-            <div class="flex flex-col mb-6 space-y-1">
-                <div class="flex justify-between items-baseline">
-                    <span class="text-sm text-slate-400">Wholesale (USD)</span>
-                    <span class="text-2xl font-bold text-slate-900">$128.00</span>
+        <div class="bg-white p-6 border border-slate-200 rounded-xl shadow-sm">
+            <div class="relative aspect-square bg-slate-100 rounded-lg mb-6 overflow-hidden">
+                <div class="mySlides fade h-full w-full">
+                    <img src="1.jpg" class="w-full h-full object-cover">
                 </div>
-                <div class="flex justify-between items-baseline border-t pt-2">
-                    <span class="text-sm text-slate-400">Wholesale (CNH)</span>
-                    <span class="text-lg font-semibold text-emerald-700">¥920.00</span>
+                <div class="mySlides fade h-full w-full hidden">
+                    <img src="2.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="mySlides fade h-full w-full hidden">
+                    <img src="3.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="mySlides fade h-full w-full hidden">
+                    <img src="4.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute bottom-4 right-4 bg-black/50 text-white text-[10px] px-2 py-1 rounded-full">
+                    Artisan View <span id="slide-num">1</span>/4
                 </div>
             </div>
-            <button onclick="handleCheckout(this)" class="w-full bg-slate-900 text-white py-4 rounded font-bold text-xs uppercase tracking-widest hover:bg-black transition flex items-center justify-center">
-                <span>Secure Checkout</span>
+            
+            <h3 class="text-2xl font-bold mb-2">Zen Series Ceramic Vase</h3>
+            <p class="text-slate-500 text-sm mb-6">Hand-fired minimalist ceramic pottery. Available for bulk export and retail.</p>
+            
+            <div class="space-y-2 mb-8 border-t pt-4">
+                <div class="flex justify-between items-center text-sm">
+                    <span class="text-slate-400 font-bold uppercase">Wholesale (USD)</span>
+                    <span class="text-xl font-bold">$128.00</span>
+                </div>
+                <div class="flex justify-between items-center text-sm">
+                    <span class="text-slate-400 font-bold uppercase">Wholesale (CNH)</span>
+                    <span class="text-lg font-bold text-emerald-700">¥915.00</span>
+                </div>
+            </div>
+            <button onclick="handleCheckout(this)" class="w-full bg-slate-900 text-white py-4 rounded-lg font-bold text-xs uppercase tracking-widest hover:bg-black transition flex items-center justify-center">
+                <span>Add to Cart & Checkout</span>
             </button>
         </div>
 
-        <div class="bg-white p-6 border border-slate-200 rounded-lg shadow-sm">
-            <div class="aspect-square bg-slate-100 rounded mb-6 overflow-hidden flex items-center justify-center">
-                <img src="product2.jpg" alt="Artisan Product" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" class="w-full h-full object-cover">
-                <div class="hidden text-slate-300 italic text-sm text-center p-4">Please upload product2.jpg to GitHub</div>
+        <div class="bg-white p-6 border border-slate-200 rounded-xl shadow-sm">
+            <div class="aspect-square bg-slate-100 rounded-lg mb-6 overflow-hidden">
+                <img src="5.png" class="w-full h-full object-cover hover:scale-105 transition duration-500">
             </div>
-            <h3 class="text-xl font-bold mb-4">Handwoven Rattan Set</h3>
-            <div class="flex flex-col mb-6 space-y-1">
-                <div class="flex justify-between items-baseline">
-                    <span class="text-sm text-slate-400">Wholesale (USD)</span>
-                    <span class="text-2xl font-bold text-slate-900">$95.00</span>
+            
+            <h3 class="text-2xl font-bold mb-2">Organic Rattan Weave Set</h3>
+            <p class="text-slate-500 text-sm mb-6">100% Natural fibers, handwoven by certified master artisans.</p>
+            
+            <div class="space-y-2 mb-8 border-t pt-4">
+                <div class="flex justify-between items-center text-sm">
+                    <span class="text-slate-400 font-bold uppercase">Wholesale (USD)</span>
+                    <span class="text-xl font-bold">$95.00</span>
                 </div>
-                <div class="flex justify-between items-baseline border-t pt-2">
-                    <span class="text-sm text-slate-400">Wholesale (CNH)</span>
-                    <span class="text-lg font-semibold text-emerald-700">¥685.00</span>
+                <div class="flex justify-between items-center text-sm">
+                    <span class="text-slate-400 font-bold uppercase">Wholesale (CNH)</span>
+                    <span class="text-lg font-bold text-emerald-700">¥680.00</span>
                 </div>
             </div>
-            <button onclick="handleCheckout(this)" class="w-full bg-slate-900 text-white py-4 rounded font-bold text-xs uppercase tracking-widest hover:bg-black transition flex items-center justify-center">
-                <span>Secure Checkout</span>
+            <button onclick="handleCheckout(this)" class="w-full bg-slate-900 text-white py-4 rounded-lg font-bold text-xs uppercase tracking-widest hover:bg-black transition flex items-center justify-center">
+                <span>Add to Cart & Checkout</span>
             </button>
         </div>
+
     </section>
 
-    <footer class="bg-slate-900 text-slate-400 py-16 px-8 text-center md:text-left">
+    <footer class="bg-slate-900 text-slate-400 py-16 px-8">
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-sm">
             <div>
-                <h4 class="text-white font-bold mb-4 uppercase tracking-widest">Payment Support</h4>
-                <p>We accept multi-currency payments. Settlement is available in <span class="text-white">USD (US Dollar)</span> and <span class="text-white">CNH (Offshore RMB)</span> via international wire transfer and secure gateways.</p>
+                <h4 class="text-white font-bold mb-4 uppercase tracking-widest text-xs">Payment & Settlement</h4>
+                <p>Official support for <span class="text-white">USD</span> and <span class="text-white">CNH (Offshore RMB)</span>. Secure international wire transfers via WorldFirst / Citibank.</p>
             </div>
             <div>
-                <h4 class="text-white font-bold mb-4 uppercase tracking-widest">Shipping Policy</h4>
-                <p>Global fulfillment via DHL/FedEx. 30-day quality guarantee on all artisanal exports.</p>
+                <h4 class="text-white font-bold mb-4 uppercase tracking-widest text-xs">Export Logistics</h4>
+                <p>Standard delivery via DHL/FedEx/UPS. Professional grade export packaging included for all artisanal orders.</p>
             </div>
             <div>
-                <h4 class="text-white font-bold mb-4 uppercase tracking-widest">Compliance</h4>
-                <p>Luxe Artisans Global Trading Co., Ltd.</p>
-                <p class="text-[10px] mt-2 tracking-widest">Registered Office: Central, Hong Kong</p>
+                <h4 class="text-white font-bold mb-4 uppercase tracking-widest text-xs">Luxe Artisans Global</h4>
+                <p>Commercial Reg: HK-72394012</p>
+                <p class="mt-2 text-[10px] opacity-60">Registered Office: Central District, Hong Kong SAR</p>
             </div>
         </div>
     </footer>
 
     <script>
+        // 陶瓷轮播图逻辑
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let slideNum = document.getElementById("slide-num");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            slideNum.innerHTML = slideIndex;
+            setTimeout(showSlides, 3000); // 每3秒自动切换
+        }
+
+        // 结账加载逻辑
         function handleCheckout(btn) {
-            btn.innerHTML = `<svg class="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>`;
+            btn.innerHTML = `<svg class="animate-spin h-5 w-5 text-white" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>`;
             btn.disabled = true;
             setTimeout(() => {
                 window.location.href = "checkout.html";
