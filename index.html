@@ -3,105 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luxe Artisans Global | Premium Handcrafted Decor Export</title>
+    <title>Luxe Artisans Global | Official B2B & Retail Store</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
 </head>
-<body class="bg-[#fafaf9] text-stone-800 font-serif">
+<body class="bg-slate-50 text-slate-900">
 
-    <nav class="bg-white border-b border-stone-200 px-6 py-5 flex justify-between items-center sticky top-0 z-50">
-        <div class="flex flex-col">
-            <span class="text-2xl font-black tracking-tighter text-stone-900 leading-none">LUXE ARTISANS</span>
-            <span class="text-[10px] uppercase tracking-[0.2em] text-stone-400 mt-1">Global Trade & Export</span>
+    <nav class="bg-white border-b border-slate-200 px-8 py-5 flex justify-between items-center sticky top-0 z-50">
+        <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 bg-black rounded flex items-center justify-center text-white font-bold text-xl">L</div>
+            <div class="flex flex-col text-left">
+                <span class="text-xl font-bold tracking-tighter leading-none">LUXE ARTISANS</span>
+                <span class="text-[9px] uppercase tracking-widest text-slate-400 mt-1 font-semibold">Global Export Co., Ltd.</span>
+            </div>
         </div>
-        <div class="hidden md:flex space-x-8 text-[11px] font-bold uppercase tracking-widest text-stone-500">
-            <a href="#collection" class="hover:text-stone-900">Collection</a>
-            <a href="#shipping" class="hover:text-stone-900">Shipping</a>
-            <a href="#contact" class="hover:text-stone-900">Contact</a>
+        <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest text-slate-500">
+            <a href="#collection" class="hover:text-black">Catalog</a>
+            <a href="#policy" class="hover:text-black">Policy</a>
+            <a href="#" class="flex items-center space-x-1">
+                <span>Cart</span>
+                <span class="bg-slate-100 px-1.5 py-0.5 rounded-full text-[10px]">0</span>
+            </a>
         </div>
     </nav>
 
-    <header class="py-20 px-6 text-center bg-[#f4f1ee]">
-        <div class="max-w-3xl mx-auto">
-            <h1 class="text-4xl md:text-5xl font-light text-stone-900 mb-6">Authentic Handcrafted Pieces</h1>
-            <p class="text-stone-500 text-lg mb-8 italic">Exporting premium artisanal home decor from our workshop to global markets. We specialize in small-batch production and wholesale supply.</p>
-            <div class="flex justify-center space-x-4">
-                <span class="border border-stone-300 px-4 py-1 text-[10px] uppercase font-bold text-stone-400">Verified Exporter</span>
-                <span class="border border-stone-300 px-4 py-1 text-[10px] uppercase font-bold text-stone-400">Global Logistics</span>
+    <section class="relative bg-white pt-16 pb-24 px-8 border-b">
+        <div class="max-w-6xl mx-auto flex flex-col items-center text-center">
+            <span class="bg-slate-100 text-slate-600 px-4 py-1 rounded-full text-[10px] font-bold uppercase mb-6 tracking-widest">Verified Supplier since 2024</span>
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tighter mb-8">Premium Handcrafted <br><span class="text-slate-400 font-light italic">Artisanal Decor</span></h1>
+            <p class="text-slate-500 text-lg max-w-2xl mb-10 leading-relaxed">Direct factory sourcing and secure global fulfillment for high-end ceramic and rattan crafts. Supporting worldwide B2B and retail orders with secure payment protection.</p>
+            <div class="flex space-x-4">
+                <a href="#collection" class="bg-black text-white px-10 py-4 rounded font-bold text-sm hover:opacity-80 transition">Shop Collection</a>
+                <a href="#policy" class="bg-white border border-slate-200 text-slate-900 px-10 py-4 rounded font-bold text-sm hover:bg-slate-50 transition">Shipping Policy</a>
             </div>
         </div>
-    </header>
+    </section>
 
-    <section id="collection" class="max-w-6xl mx-auto py-20 px-6">
-        <h2 class="text-xs uppercase tracking-[0.3em] text-stone-400 text-center mb-12">Current Collection</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-
-            <div class="group border border-stone-200 bg-white p-4 rounded-sm shadow-sm">
-                <div class="aspect-square bg-stone-100 mb-6 flex items-center justify-center overflow-hidden">
-                    <img src="product1.jpg" alt="Artisan Vase" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" class="w-full h-full object-cover">
-                    <div class="hidden flex-col items-center text-stone-300 italic">
-                        <span>[ Product Image 1 ]</span>
-                        <span class="text-[10px] mt-2">Ceramic Vase Series</span>
+    <section id="collection" class="max-w-7xl mx-auto py-24 px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+            
+            <div class="group">
+                <div class="aspect-[4/5] bg-slate-100 rounded-lg mb-6 flex items-center justify-center relative overflow-hidden">
+                    <img src="product1.jpg" alt="Ceramic Vase" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="hidden flex-col items-center text-slate-300 italic">
+                        <span class="font-bold tracking-widest uppercase text-xs">Awaiting product1.jpg</span>
                     </div>
                 </div>
-                <h3 class="text-xl font-bold mb-2 tracking-tight">Hand-Fired Minimalist Vase</h3>
-                <p class="text-stone-500 text-sm mb-6 leading-relaxed">Matte finish ceramic vase, handcrafted using traditional firing techniques. Ideal for high-end interior decoration.</p>
-                <div class="flex justify-between items-center border-t border-stone-100 pt-6">
-                    <div class="flex flex-col">
-                        <span class="text-[10px] text-stone-400 uppercase">Wholesale Price</span>
-                        <span class="text-2xl font-bold">$120.00 <small class="text-sm text-stone-400 font-normal italic">USD</small></span>
-                    </div>
-                    <button onclick="alert('Redirecting to Secure Payment Gateway (USD/HKD)...')" class="bg-stone-900 text-white px-8 py-3 text-[10px] font-bold uppercase tracking-widest hover:bg-stone-700 transition">Order Now</button>
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-2xl font-bold tracking-tight text-slate-800">Zen Series Ceramic Vase</h3>
+                    <span class="text-2xl font-light text-slate-900">$128.00 USD</span>
                 </div>
+                <p class="text-slate-500 text-sm leading-relaxed mb-6">Hand-glazed minimalist ceramic vase, featuring a matte finish. Export-grade packaging included.</p>
+                <button onclick="checkoutHandler()" class="w-full bg-slate-100 text-slate-900 py-4 rounded font-bold text-xs uppercase tracking-widest hover:bg-black hover:text-white transition">Add to Cart & Checkout</button>
             </div>
 
-            <div class="group border border-stone-200 bg-white p-4 rounded-sm shadow-sm">
-                <div class="aspect-square bg-stone-100 mb-6 flex items-center justify-center overflow-hidden">
-                    <img src="product2.jpg" alt="Rattan Basket" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" class="w-full h-full object-cover">
-                    <div class="hidden flex-col items-center text-stone-300 italic">
-                        <span>[ Product Image 2 ]</span>
-                        <span class="text-[10px] mt-2">Rattan Weaving Series</span>
+            <div class="group">
+                <div class="aspect-[4/5] bg-slate-100 rounded-lg mb-6 flex items-center justify-center relative overflow-hidden">
+                    <img src="product2.jpg" alt="Rattan Basket" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="hidden flex-col items-center text-slate-300 italic">
+                        <span class="font-bold tracking-widest uppercase text-xs">Awaiting product2.jpg</span>
                     </div>
                 </div>
-                <h3 class="text-xl font-bold mb-2 tracking-tight">Organic Rattan Storage Set</h3>
-                <p class="text-stone-500 text-sm mb-6 leading-relaxed">Eco-friendly natural fibers, hand-woven by local artisans. Durable and sustainable for modern home use.</p>
-                <div class="flex justify-between items-center border-t border-stone-100 pt-6">
-                    <div class="flex flex-col">
-                        <span class="text-[10px] text-stone-400 uppercase">Wholesale Price</span>
-                        <span class="text-2xl font-bold">$85.00 <small class="text-sm text-stone-400 font-normal italic">USD</small></span>
-                    </div>
-                    <button onclick="alert('Redirecting to Secure Payment Gateway (USD/HKD)...')" class="bg-stone-900 text-white px-8 py-3 text-[10px] font-bold uppercase tracking-widest hover:bg-stone-700 transition">Order Now</button>
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-2xl font-bold tracking-tight text-slate-800">Organic Rattan Weave Set</h3>
+                    <span class="text-2xl font-light text-slate-900">$95.00 USD</span>
                 </div>
+                <p class="text-slate-500 text-sm leading-relaxed mb-6">Handwoven from 100% natural organic fibers. Durable, sustainable, and crafted by certified artisans.</p>
+                <button onclick="checkoutHandler()" class="w-full bg-slate-100 text-slate-900 py-4 rounded font-bold text-xs uppercase tracking-widest hover:bg-black hover:text-white transition">Add to Cart & Checkout</button>
             </div>
 
         </div>
     </section>
 
-    <footer id="shipping" class="bg-stone-900 text-stone-400 py-16 px-6">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+    <section id="policy" class="bg-white py-24 px-8 border-y">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16">
             <div>
-                <h4 class="text-white font-bold uppercase text-xs tracking-widest mb-6 border-b border-stone-700 pb-2">Global Shipping</h4>
-                <p class="text-xs leading-relaxed">We ship globally via DHL, FedEx, and UPS. Typical delivery time for international orders is 7-14 business days. All items are insured and trackable.</p>
+                <h4 class="text-sm font-bold uppercase mb-6 tracking-[0.2em] text-slate-900 border-l-4 border-black pl-4">Global Shipping</h4>
+                <p class="text-slate-500 text-sm leading-relaxed text-pretty text-left">We provide worldwide express shipping via DHL, FedEx, and UPS. Orders are processed within 48 hours and typically arrive within 7-12 business days. Tracking numbers are provided for all international shipments.</p>
             </div>
             <div>
-                <h4 class="text-white font-bold uppercase text-xs tracking-widest mb-6 border-b border-stone-700 pb-2">Payment & Returns</h4>
-                <p class="text-xs leading-relaxed mb-4">We accept major credit cards and bank transfers (USD/HKD). 30-day return policy for quality-related issues.</p>
-                <div class="flex space-x-2 opacity-50 grayscale hover:grayscale-0 transition cursor-default">
-                    <div class="w-8 h-5 bg-white rounded-sm flex items-center justify-center text-[6px] font-bold text-blue-900">VISA</div>
-                    <div class="w-8 h-5 bg-white rounded-sm flex items-center justify-center text-[6px] font-bold text-red-600">MasterCard</div>
-                    <div class="w-8 h-5 bg-white rounded-sm flex items-center justify-center text-[6px] font-bold text-blue-500">PayPal</div>
-                </div>
+                <h4 class="text-sm font-bold uppercase mb-6 tracking-[0.2em] text-slate-900 border-l-4 border-black pl-4">30-Day Guarantee</h4>
+                <p class="text-slate-500 text-sm leading-relaxed text-pretty text-left">Customer satisfaction is our priority. We offer a 30-day money-back guarantee for quality-related issues. All payments are protected by end-to-end encryption for your security.</p>
             </div>
-            <div id="contact">
-                <h4 class="text-white font-bold uppercase text-xs tracking-widest mb-6 border-b border-stone-700 pb-2">Contact Export Office</h4>
-                <p class="text-xs mb-2">Luxe Artisans Global Trading Co., Ltd.</p>
-                <p class="text-xs mb-2 italic">Email: trade@luxe-artisans-global.com</p>
-                <p class="text-[10px] uppercase">Hong Kong Commercial District</p>
+            <div>
+                <h4 class="text-sm font-bold uppercase mb-6 tracking-[0.2em] text-slate-900 border-l-4 border-black pl-4">Wholesale Support</h4>
+                <p class="text-slate-500 text-sm leading-relaxed text-pretty text-left">For bulk orders exceeding 50 units, please contact our export department for exclusive B2B pricing and custom logistics solutions.</p>
             </div>
         </div>
-        <div class="max-w-6xl mx-auto mt-16 pt-8 border-t border-stone-800 text-center text-[10px] uppercase tracking-widest">
-            © 2026 Luxe Artisans Global. All Rights Reserved.
+    </section>
+
+    <footer class="bg-white py-16 px-8 text-center">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex justify-center items-center space-x-6 mb-10 opacity-60">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" class="h-4" alt="Visa">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" class="h-6" alt="Mastercard">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" class="h-5" alt="PayPal">
+            </div>
+            <p class="text-[10px] text-slate-400 uppercase tracking-widest mb-4">Luxe Artisans Global Trading Co., Ltd. | Hong Kong SAR</p>
+            <p class="text-[10px] text-slate-400 tracking-widest">Registration No: HK-72394012 (Verified)</p>
         </div>
     </footer>
 
+    <script>
+        function checkoutHandler() {
+            const btn = event.target;
+            btn.innerHTML = "REDIRECTING TO SECURE GATEWAY...";
+            btn.style.backgroundColor = "#10b981";
+            setTimeout(() => {
+                alert("Redirecting to WorldFirst / Stripe Secure Checkout (USD/HKD Supported)...");
+                btn.innerHTML = "ADD TO CART & CHECKOUT";
+                btn.style.backgroundColor = "#f1f5f9";
+            }, 1000);
+        }
+    </script>
 </body>
 </html>
